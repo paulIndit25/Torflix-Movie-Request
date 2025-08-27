@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Torflix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <header class="main-header">
+          <div>
+            <a href="#"
+              ><img src="Images/logo.png" alt="logo" class="logo" />
+            </a>
+          </div>
+          <nav>
+            <ul class="main-nav">
+              <li><a class="main-nav-link hover-link" href="#">Home</a></li>
+              <li><a class="main-nav-link hover-link" href="#">Upload</a></li>
+              <li><a class="main-nav-link hover-link" href="#">Rules</a></li>
+              <li><a class="main-nav-link hover-link" href="#">Contact</a></li>
+              <li><a class="main-nav-link hover-link" href="#">About Us</a></li>
+              <li>
+                <a class="main-nav-link" href="#"
+                  ><ion-icon name="person"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="search-bar">
+        <nav>
+          <ul class="sec-nav">
+            <li><a class="sec-nav-link" href="#">New</a></li>
+            <li><a class="sec-nav-link" href="#">Popular</a></li>
+            <li><a class="sec-nav-link" href="#">Recently Added</a></li>
+            <li><a class="sec-nav-link" href="#">Upcoming</a></li>       
+            <li><a class="sec-nav-link" href="#">Top Rated</a></li> 
+            <!-- <li><a class="sec-nav-link" href="#">Classics</a></li>     -->
+            <li><a class="sec-nav-link" href="#">Request</a></li>
+            <li class="filter-icon"><a class="sec-nav-link" href="#"><ion-icon name="funnel"></ion-icon></a></li>
+
+        </nav>
+        <div class="search">
+          <form class="search-form">
+            <input type="text" placeholder="Search for movies or TV shows"/>
+          </form>
+          <button class="btn-search">Search</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="request-for-new-movie">
+            <h1> Request for a New Movie! </h1>
+            <form class="requestNewMovie-form">
+              <div><input type="text" placeholder="Movie Name" required/></div>
+              <div><input type="text" placeholder="Year" required/></div>
+              <div><input type="text" placeholder="Director" required/></div>
+              <div><input type="text" placeholder="Cast" required/></div>
+              <div><button class="btn-req">Request</button></div>              
+            </form>
+          </div>
+          <div class="movie-trending">Hey</div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

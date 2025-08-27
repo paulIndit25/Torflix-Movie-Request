@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 10px */
+}
+body {
+  font-family: "Oswald", sans-serif;
+  /* color: #fff; */
+}
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url(Images/Hero.jpg);
+}
+.container {
+  max-width: 250rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+.logo {
+  width: 21rem;
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  letter-spacing: 1.6px;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s;
+}
+.hover-link::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #c11119;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #c11119;
+  /* color: #e50914; */
+}
+.hover-link:hover::after,
+.hover-link:hover::after {
+  transform: scaleX(1);
+}
+
+.search-bar {
+  background-color: rgba(0, 0, 0, 0.473);
+  backdrop-filter: blur(2px);
+  height: 4.4rem;
+  display: grid;
+  grid-template-columns: 0.55fr 0.8fr;
+  align-items: center;
+  /* gap: 3.6rem; */
+}
+
+.sec-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  letter-spacing: 1.6px;
+  padding: 0 1rem 0 3.8rem;
+}
+.sec-nav-link:link,
+.sec-nav-link:visited {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.sec-nav-link:hover,
+.sec-nav-link:active {
+  color: #c11119;
+}
+
+.filter-icon {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.search {
+  /* display: flex; */
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 2fr auto;
+  align-items: center;
+  padding: 0 0.4rem;
+}
+.search-form input {
+  width: 100%;
+  border: none;
+  padding: 0.78rem 0.87rem;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  font-family: inherit;
+  background-color: #fdf2e9;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.search-form input::placeholder {
+  color: #aaa;
+}
+.search-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0.6rem 0.6rem rgba(193, 17, 26, 0.5);
+}
+.btn-search {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.95rem 2.2rem;
+  border: none;
+  background-color: #c11119;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-search:hover {
+  background-color: #9a0e14;
+}
+
+/* HERO CONTENT*/
+.movie-trending {
+  /* background-color: rgba(193, 17, 26, 0.5); */
+}
+
+h1 {
+  color: #fff;
+}
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.request-for-new-movie {
+  padding: 25rem 3.2rem;
+}
+.request-for-new-movie h1 {
+  color: #fff;
+  font-size: 8rem;
+  letter-spacing: 2.5px;
+  /* padding: 5.6rem 3.2rem; */
+}
+.requestNewMovie-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* padding: 0 3.2rem; */
+  row-gap: 3.8rem;
+  margin-top: 2.4rem;
+  margin-left: 0.8rem;
+}
+
+.requestNewMovie-form input {
+  border: none;
+  width: 86.2%;
+  font-size: 2.5rem;
+  padding: 1.8rem;
+  border-radius: 8px;
+  letter-spacing: 1.5px;
+  font-family: inherit;
+  background-color: #fdf2e9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+/* .requestNewMovie-form input::placeholder {
+  color: #aaa; 
+} */
+.requestNewMovie-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0.6rem 0.6rem rgba(193, 17, 26, 0.5);
+}
+.btn-req {
+  width: 76.2%;
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  padding: 1.8rem 0;
+  border: none;
+  background-color: #c11119;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-req:hover {
+  background-color: #9a0e14;
+}
